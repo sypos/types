@@ -1,0 +1,11 @@
+{
+  "name": "@sypos/types",
+  "version": "0.0.1",
+  "description": "Typos from Sypos Application",
+  "main": "index.js",
+  "types": "./src",
+  "repository": "https://github.com/sypos/types",
+  "author": "IsLuny (https://github.com/isluny)",
+  "license": "MIT",
+  "private": false
+}
