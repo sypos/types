@@ -8,8 +8,3 @@ export interface Role {
 
     permissions: number;
 }
-
-export enum RolePermissions {
-    ADMINISTRATOR = 1n << 0n,
-    MANAGE_STORE = 1n << 1n,
-}
