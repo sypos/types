@@ -1,6 +1,6 @@
 import { ID } from 'globals';
 
-enum ItemSaleType {
+export enum ItemSaleType {
     'VOLUME',
     'UNIT',
 }
@@ -20,12 +20,18 @@ export interface Item {
     available: boolean;
 
     // Mods
+    variants_names: string[];
     variants: ItemVariant[];
+
+    modifiers_ids: ID[];
 }
 
-interface ItemVariant {
+export interface ItemVariant {
+    id: ID;
+    available: boolean;
+
+    // Basic Infos
     option_names: string[];
     price: number | null;
-
-    available: boolean;
 }
+export * from './Modifier';
