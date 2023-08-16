@@ -1,5 +1,10 @@
 import { ID } from 'globals';
 
+enum ModifierCalculationBy {
+    'SUM',
+    'BIGGER',
+}
+
 export interface Modifier {
     id: ID;
     deleted: boolean;
@@ -7,6 +12,7 @@ export interface Modifier {
     // Basic Infos
     name: string;
     description?: string;
+    calculation_by: ModifierCalculationBy;
 
     // Max and Min Options
     min_options: number | null;
