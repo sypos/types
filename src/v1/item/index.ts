@@ -27,6 +27,10 @@ export interface Item {
     variants: ItemVariant[];
 
     modifiers_ids: ID[];
+
+    // Icon
+    icon: `cdn://${string}` | string;
+    icon_color: number;
 }
 
 export interface ItemVariant {
