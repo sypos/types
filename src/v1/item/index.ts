@@ -19,6 +19,9 @@ export interface Item {
 
     available: boolean;
 
+    // Stores (BackOffice)
+    stores: StoreVarient[];
+
     // Mods
     variants_names: string[];
     variants: ItemVariant[];
@@ -33,5 +36,17 @@ export interface ItemVariant {
     // Basic Infos
     option_names: string[];
     price: number | null;
+
+    stores: StoreVarient[];
 }
+
+export interface StoreVarient {
+    id: ID;
+
+    available: boolean;
+    available_in_store: boolean;
+    
+    price: number | null;
+}
+
 export * from './Modifier';
