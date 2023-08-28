@@ -19,10 +19,10 @@ export interface Modifier {
     max_options: number | null;
 
     // Modifier Options
-    options: ModifierOpetion[];
+    options: ModifierOption[];
 }
 
-export interface ModifierOpetion {
+export interface ModifierOption {
     ID: ID;
     deleted: boolean;
 
